@@ -1,4 +1,4 @@
-# ABR Mining: Reproducibility Code
+# ABR-decision-models-2026
 
 Code accompanying the publication of simulation results for machine-learning-assisted auditory brainstem response (ABR) threshold search. Models learn, from averaged ABR waveforms and stimulus metadata, to predict the next stimulus action (level change, repeat, or stop) and to detect Wave V.
 
@@ -39,6 +39,10 @@ python -m src.models.stimulus_change.impl.transformer.transformer_impl --epochs 
 ```
 
 Scripts write outputs (results, fitted PCA/scalers) under git-ignored `exported_features/`. Several scripts use paths relative to their own directory; run them from their folder if a module invocation fails.
+
+## Contact
+
+shenyi@uw.edu
 
 ## License
 
