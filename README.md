@@ -1,6 +1,6 @@
-# ABR-decision-models-2026
+# ABR_decision_models_2026
 
-Code accompanying the publication of simulation results for machine-learning-assisted auditory brainstem response (ABR) threshold search. Models learn, from averaged ABR waveforms and stimulus metadata, to predict the next stimulus action (level change, repeat, or stop) and to detect Wave V.
+Code supporting the development and evaluation of DNN, LSTM, and Transformer models for auditory brainstem response (ABR) waveform quality classification and stimulus-decision prediction. This repository accompanies publication of simulation results for machine-learning-assisted ABR threshold search.
 
 This repository exists for **reproducibility**: it contains architecture descriptions, hyperparameters, training/evaluation/preprocessing/figure-generation code, and pseudocode.
 
