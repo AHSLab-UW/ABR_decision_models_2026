@@ -13,7 +13,7 @@ This work was conducted under NIH STTR award **R41DC022808** between **Intellige
 ## Code organization
 
 ```
-configs/            Hyperparameter JSON files (stimulus_change/, wave_5/)
+configs/            Hyperparameter JSON files (stimulus_change/)
 docs/               Architecture, hyperparameters, pseudocode, data policy
 src/
   common/           Data utilities, CNN encoder, model base classes, results loggers, plotting
@@ -21,7 +21,6 @@ src/
   preprocess/       Action tables, feature grouping, PCA, preprocessing pipeline
   models/
     stimulus_change/  DNN / LSTM / Transformer models, configs, training entry points (impl/)
-    wave_5/           Wave V detection models and training entry points
   utils/            Waveform sequence dataset helpers
 ```
 

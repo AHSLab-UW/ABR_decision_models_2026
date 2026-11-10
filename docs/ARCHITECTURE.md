@@ -1,6 +1,6 @@
 # Architecture
 
-All models predict the next stimulus-level action in a sequential ABR threshold search (`output_size = 14` classes: dB adjustments, a repeat class and a stop class), or, for the `wave_5` task, whether Wave V is present (binary).
+All models predict the next stimulus-level action in a sequential ABR threshold search (`output_size = 14` classes: dB adjustments, a repeat class and a stop class).
 
 ## Inputs per step
 - Raw averaged ABR waveform, 256 samples (resampled to a common rate) → `[T, 1, 256]`
@@ -15,7 +15,6 @@ All models predict the next stimulus-level action in a sequential ABR threshold 
 | Transformer | `src/models/stimulus_change/transformer/` | Pre-FC → projection + positional embedding → causal Transformer encoder → post-FC; non-autoregressive variants use causal masking only |
 | Two-head transformer | `.../cnn_transformer/non_auto_transformer_model.py` | First head: STOP / REPEAT / ADJUST (3-class); action head: dB adjustment classes |
 | Random baseline | `src/models/stimulus_change/dnn/configurable_random_model.py` | Seeded random predictor |
-| Wave V models | `src/models/wave_5/` | DNN / LSTM / Transformer variants for binary Wave V detection |
 
 ## Training / evaluation
 - Sequence-level 80/10/10 train/test/holdout split; PCA and scalers fit on train only
