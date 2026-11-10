@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from src.common.plot_util import create_histogram
 from src.common.data_util import *
-from src.preprocess.wave_5_processing import *
 
 
 def create_matrix_df(grouped_dfs, temp_file, db_changes):
@@ -93,10 +92,4 @@ def build_action_tables(record_df, output_dir):
     incomplete_feature_df = create_matrix_df(grouped_dfs, True, db_changes)
     #incomplete_feature_df.iloc[:, -3:].to_csv(f"{output_dir}/incomplete_feature_table.csv", index=False)
 
-    wave_5_action_table = build_wave_5_action_table(
-        grouped_dfs,
-        action_df,
-        f"{output_dir}/wave_5_action_table.csv"
-    )
-
-    return action_df, incomplete_feature_df, wave_5_action_table
+    return action_df, incomplete_feature_df

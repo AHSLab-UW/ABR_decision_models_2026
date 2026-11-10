@@ -4,8 +4,7 @@ ABR Waveform CNN Encoder
 Robust 1D CNN encoder for raw ABR waveforms.
 
 - Uses GroupNorm (stable for small / variable batch sizes)
-- Uses dilated convolutions (multi-scale morphology — captures Wave V peaks at
-  different temporal scales)
+- Uses dilated convolutions to capture morphology at different temporal scales
 - pool_k=1 (default): global average pooling
 - pool_k=K (e.g. 8): preserves K spatial bins → retains Wave-V latency info
 - Maps [T, 1, L] → [T, embed_dim]
