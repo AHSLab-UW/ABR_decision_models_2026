@@ -1,0 +1,22 @@
+{
+    "input_size": 12,
+    "output_size": 1,
+    "pre_fc_layers": [
+        64
+    ],
+    "hidden_layers": [
+        64,
+        64,
+        32
+    ],
+    "holdout_validation": false,
+    "post_fc_layers": [
+        64,
+        32
+    ],
+    "dropout": 0.1,
+    "epochs": 25,
+    "learning_rate": 0.001,
+    "sampling_strategy": "none",
+    "activation": "relu"
+}

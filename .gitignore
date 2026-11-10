@@ -1,0 +1,20 @@
+# Never commit data, weights, fitted artifacts, or logs
+data/
+exported_features/
+hyak-logs/
+logs/
+*.pth
+*.pt
+*.onnx
+*.joblib
+*.pkl
+*.npy
+*.npz
+*.csv
+*.xml
+*.Txt
+*.log
+__pycache__/
+.idea/
+venv/
+.venv/

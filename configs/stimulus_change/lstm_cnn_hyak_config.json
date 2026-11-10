@@ -1,0 +1,23 @@
+{
+    "input_size": 23,
+    "output_size": 14,
+    "pre_fc_layers": [],
+    "lstm_hidden_size": 256,
+    "cnn_embed_dim": 96,
+    "waveform_length": 256,
+    "pool_k": 8,
+    "cross_validation": false,
+    "lstm_layers": 3,
+    "label_embedding_dim": 24,
+    "pos_embedding_dim": 24,
+    "prev_preds": false,
+    "post_fc_layers": [
+        64
+    ],
+    "dropout": 0.15,
+    "activation": "relu",
+    "sampling_strategy": "linear",
+    "epochs": 60,
+    "learning_rate": 0.0005,
+    "holdout_validation": false
+}

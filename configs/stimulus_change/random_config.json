@@ -1,0 +1,7 @@
+{
+    "input_size": 12,
+    "output_size": 14,
+    "seed": 42,
+    "holdout_validation": false,
+    "balanced_dataset": false
+}

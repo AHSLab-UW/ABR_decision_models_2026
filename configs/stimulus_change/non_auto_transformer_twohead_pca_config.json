@@ -1,0 +1,21 @@
+{
+    "waveform_length": 256,
+    "cnn_embed_dim": 96,
+    "pool_k": 8,
+    "meta_dim": 12,
+    "output_size": 14,
+    "stop_idx": 13,
+    "repeat_idx": 7,
+    "action_classes": 12,
+    "pre_fc_layers": [],
+    "transformer_dim": 256,
+    "transformer_heads": 4,
+    "transformer_ff": 256,
+    "transformer_layers": 6,
+    "post_fc_layers": [
+        128,
+        64
+    ],
+    "dropout": 0.15,
+    "activation": "relu"
+}

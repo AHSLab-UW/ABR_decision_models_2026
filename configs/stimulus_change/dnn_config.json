@@ -1,0 +1,23 @@
+{
+    "input_size": 12,
+    "output_size": 14,
+    "pre_fc_layers": [
+        16
+    ],
+    "hidden_layers": [
+        64,
+        64,
+        32
+    ],
+    "post_fc_layers": [
+        32
+    ],
+    "dropout": 0.1,
+    "activation": "leaky_relu",
+    "use_batch_norm": true,
+    "learning_rate": 0.0001,
+    "epochs": 60,
+    "sampling_strategy": "none",
+    "holdout_validation": false,
+    "balanced_dataset": false
+}

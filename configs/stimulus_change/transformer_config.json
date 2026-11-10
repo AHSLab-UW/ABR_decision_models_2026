@@ -1,0 +1,26 @@
+{
+    "input_size": 12,
+    "output_size": 14,
+    "pre_fc_layers": [
+        256,
+        128,
+        64
+    ],
+    "label_embedding_dim": 64,
+    "transformer_dim": 256,
+    "transformer_layers": 3,
+    "holdout_validation": false,
+    "pos_embedding_dim": 64,
+    "transformer_heads": 8,
+    "transformer_ff": 256,
+    "post_fc_layers": [
+        64
+    ],
+    "dropout": 0.1,
+    "activation": "relu",
+    "epoch": 25,
+    "sampling_strategy": "linear",
+    "learning_rate": 0.0001,
+    "epochs": 60,
+    "prev_preds": false
+}
